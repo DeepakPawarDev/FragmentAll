@@ -5,14 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
 
-    <fragment
-        android:id="@+id/fragment"
-        android:name="user.simfi.com.myapplication.MyFirstFragment"
-        android:layout_width="100dp"
 
-        android:layout_height="100dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Add Frag Using XML"
+        android:onClick="addFragUsingXML"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Add Frag Using Frag Manager"
+        android:onClick="addFragUsingFragManager"
+        android:layout_height="wrap_content" />
 </LinearLayout>
